@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -29,5 +30,118 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/mobile_navigation" />
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"><ImageView
+                android:id="@+id/foodButton"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="475dp"
+                android:layout_marginBottom="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/food_icon"></ImageView>
+            <TextView
+                android:id="@+id/foodText"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/foodButton"
+                android:layout_marginTop="-25dp"
+                android:text="Food"
+                android:textAlignment="center"
+                android:textSize="20sp"></TextView></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:id="@+id/sleepButton"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="475dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/sleep_icon"></ImageView>
+            <TextView
+                android:id="@+id/sleepText"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/sleepButton"
+                android:layout_marginTop="-25dp"
+                android:layout_marginLeft="10dp"
+                android:text="Sleep"
+                android:textAlignment="center"
+                android:textSize="20sp">
+            </TextView></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:id="@+id/workButton"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="475dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/study_icon"></ImageView>
+            <TextView
+                android:id="@+id/workText"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/workButton"
+                android:layout_marginTop="-25dp"
+                android:layout_marginLeft="10dp"
+                android:text="Work"
+                android:textAlignment="center"
+                android:textSize="20sp"></TextView></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:id="@+id/funButton"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="475dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/food_icon"></ImageView>
+            <TextView
+                android:id="@+id/funText"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/funButton"
+                android:layout_marginTop="-25dp"
+                android:layout_marginLeft="10dp"
+                android:text="Fun"
+                android:textAlignment="center"
+                android:textSize="20sp"></TextView></RelativeLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
